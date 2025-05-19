@@ -1,3 +1,11 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # This loads the variables from .env file into environment
+
+print(os.getenv("OPENAI_API_KEY"))  # Should print your key now
+
+
 import streamlit as st
 from chatbot import generate_response
 
